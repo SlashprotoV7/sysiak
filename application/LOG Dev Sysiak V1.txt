@@ -1,0 +1,67 @@
+16/03/2021
+Sysiak - Dev Log 
+1. Progression : 
+	a. Edit variable di menu  "report_it" yaitu untuk menentukan jumlah form masuk, proses,
+	   ,selesai dan tolak Pada setiap bulannya
+	b. jika diklik bulan yang dipilih, maka aplikasi hanya akan menampilkan data form sesuai
+	   dengan bulan yang dipilih. (jika januari, maka data januari yang akan tampil)
+	c. Memperbaiki jumlah form yang ditampilkan pada bulan yang dipilih seperti no.2 
+	d. Menambahkan menu baru yaitu "Antrian ACC" untuk diberikan kepada "Admin & Kasubbag"
+	   untuk mengecek apakah tugas yang sudah "dia" atau staff kerjakan sudah selesai apa 
+	   belum menu ini diperlukan untuk menyetujui kalau form itu ssudah benar-benar rampung.
+	e. error di menu cetak Form
+
+2. On Going :
+	a. Pembagian Hak Akses kesetiap User (Admin, Kasubbag, Staff, Hakim, PNS, DLL)
+	b. Rancang Dashboard Sysiak untuk Admin 
+	   - Menambahkan Menu Form yang belum atau sedang dalam proses pengerjaan di Dashboard (Reminder)
+	   - 
+
+3. Completion : 
+	a. Perbaikan untuk Modal Acc Form (Admin) untuk menyelesaikan form yang sedang ditangani
+	b. Perbaikan beberapa data seperti "tgl Pengajuan, masalah" pada menu detail form di tab "Form Selesai"
+	   dengan memasukan 1 per 1 data dari JavaScript di file "a_detai_report_it.php"
+	c. menambahkan field baru "bulan" pada tabel countmasuk,countproses,countselesai & counttolak untuk
+	   perbaikan penjumlahan form masuk dll.
+
+17/03/2021
+Sysiak - Dev Log 
+1. Progression : 
+	a. Perbaiki Menu Pemanggilan Form sesuai dengan tanggal yang dipilih
+	b. id1 dan id_form di tabel "d_laporan_pemeliharaan" yang tidak tergenerate otomatiis BERURUTAN sesuai dengan angka terakhir
+	   yang tercatat di DB
+	
+2. On Going :
+	a. Perbaiki Link menuju tambah dan hapus Form di "a_detail_report_it.php" 
+	   - Hapus ( <a href="<?= base_url(); ?>Admin/hapusFormMasuk/<?= $forms['id1']; ?>/<?= 3;   ?>"> )
+	   - Tambah ( <?= base_url();?>admin/addformmasuk/<?= 3;   ?> )
+	   dengan mengganti angka "3" agar bisa dinamis berganti sesuai dengan bulan yang di pilih.
+	b. Perbaiki Menu Lainnya sesuai dengan tanggal yang dipilih ( Menu Proses, Selesai, batal Form di "a_detail_report_it.php" )
+	c. Perbaiki menu PTIP sebelum Membuat Fitur ATK.
+
+3. Completion : 
+	a. Perbaikan error pada saat memilih menu "a_detail_report_it.php" yang tidak menampilkan form sesuai dengan bulan yang di klik
+	b. perbaikan menampilkan form yang hanya di buat pada tahun 2021 (tahun sekarang).
+	c. Perhitungan jumlah Form perbulan dimenu "a_report_it.php" sudah benar dan angkanya sudah dinamis.
+	d. Tampilan "BULAN" di menu "a_detail_report_it.php" sudah dinamis sesuai dengan bulan yang dipilih di menu "a_report_it.php"
+
+18/03/2021
+Sysiak - Dev Log 
+1. Progression : 
+	a. Error Cetak Belum Selesai
+	b. id1 dan id_form di tabel "d_laporan_pemeliharaan" yang tidak tergenerate otomatiis BERURUTAN sesuai dengan angka terakhir
+	   yang tercatat di DB
+	
+2. On Going :
+	a. Membuat Menu Personil PN untuk menambahkan Pegawai/Honorer.
+	b. Menambahkan USER LOGIN ACCOUNT untuk setiap personil PN 
+
+3. Completion : 
+	a. Perbaikan error link menuju tambah dan hapus sudah bisa digunakan ( a_detail_report_it.php )
+	b. perbaikan Menu Lainnya sesuai dengan tanggal yang dipilih ( Menu Proses, Selesai, batal Form di "a_detail_report_it.php" )
+
+
+
+
+
+
